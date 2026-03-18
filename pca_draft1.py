@@ -30,4 +30,6 @@ for sent in sentences:
     length=len(doc)
     
     nouns=sum(1 for token in doc if token.pos_=="NOUN")
-    verbs=sum(1
+    verbs=sum(1 for token in doc if token.pos_=="VERB")
+    adjectives=sum(1 for token in doc if token.pos_=="ADJ")
+    adverbs=sum(1 for token in doc if token.pos_=="ADV")
